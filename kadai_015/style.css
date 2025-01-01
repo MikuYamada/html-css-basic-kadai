@@ -1,0 +1,47 @@
+/* ルート要素のフォントサイズを20pxに設定 */
+:root {
+    font-size: 20px;
+}
+
+/* bodyのフォント種類を指定 */
+body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center; /* テキストを中央寄せ */
+}
+
+/* h1のスタイル */
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem; /* ルート要素の2倍のサイズ */
+    letter-spacing: 1.2em; /* 文字の大きさに対して1.2倍の文字間 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 影を付ける */
+    border-bottom: 3px solid rgb(115, 115, 114); /* 下に実線を追加 */
+    margin-bottom: 20px;
+}
+
+/* スカイブルーの文字色 */
+.blue {
+    color: skyblue; /* キーワードでスカイブルー */
+}
+
+/* ピンクの文字色 */
+.pink {
+    color: rgb(255, 192, 203); /* RGBでピンク */
+}
+
+/* id="basic" 内の子孫要素の太字スタイル */
+#basic p {
+    font-weight: bold; /* デフォルトで太字にする */
+}
+
+/* その他の p 要素を通常のフォントに戻す */
+p {
+    font-weight: normal;
+}
+
+/* 個別の要素を太字にする */
+#basic p:nth-of-type(1),
+#basic p:nth-of-type(2),
+#basic p:nth-of-type(3) {
+    font-weight: bold;
+}
